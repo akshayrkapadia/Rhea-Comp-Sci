@@ -7,4 +7,5 @@ class Movie:
         self.link = link
 
     def showFullDesc(self):
-        print(self.title, "(" + self.year + ")", "|", "Rating:", self.rating, "|", self.link)
+        print(self.title, "(" + self.year + ")", "|",
+              "Rating:", self.rating, "|", self.link)

@@ -10,9 +10,11 @@ def getSoup(url):
     soup = BeautifulSoup(source, 'html.parser')
     return soup
 
+
 def getValues(raw_movie, attr, htmlClass):
     values = raw_movie.find_all(attr, class_=htmlClass)
     return values
+
 
 def getValue(raw_movie, attr, htmlClass):
     value = raw_movie.find(attr, class_=htmlClass)
