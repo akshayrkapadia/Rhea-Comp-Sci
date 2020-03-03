@@ -1,10 +1,10 @@
-from library import Library
-from movie_scraper import getMovies
+from Classes.library import Library
+from movie_scraper import getAllMovies
 
 lib = Library()
 
 url = "https://reelgood.com/movies/source/netflix"
 
-movies = getMovies(url)
+movies = getAllMovies(url)
 lib.addMovies(movies)
 lib.showMovies()

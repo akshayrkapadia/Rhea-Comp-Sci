@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from movie import Movie
+from Classes.movie import Movie
 
 
 def getSoup(url):
@@ -34,3 +34,14 @@ def getMovies(url):
         rating = values[2].text
         movies.append(Movie(title, releaseYear, rating, link))
     return movies
+
+def getAllMovies(url):
+    all_movies = []
+    for i in range(0, 10000, 50):
+        new_url = url + "?offset=" + str(i)
+        movies = getMovies(new_url)
+        if len(movies) == 0:
+            break
+        else:
+            all_movies += movies
+    return all_movies
