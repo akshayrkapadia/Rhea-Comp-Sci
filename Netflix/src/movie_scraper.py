@@ -35,6 +35,7 @@ def getMovies(url):
         movies.append(Movie(title, releaseYear, rating, link))
     return movies
 
+
 def getAllMovies(url):
     all_movies = []
     for i in range(0, 10000, 50):
