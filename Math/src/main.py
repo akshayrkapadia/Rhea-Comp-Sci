@@ -1,5 +1,5 @@
 class Point(object):
-    """docstring for Point."""
+    """This is a point class"""
 
     def __init__(self, x, y, z):
         super(Point, self).__init__()
