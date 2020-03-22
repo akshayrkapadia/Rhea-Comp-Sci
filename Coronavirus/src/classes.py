@@ -1,3 +1,6 @@
+import matplotlib
+
+
 class Earth(object):
     """
     Class that represents the Earth.
@@ -11,20 +14,24 @@ class Earth(object):
         super(Earth, self).__init__()
         pass
 
-    # TODO: Return the percentage of cases resulting in deaths
+    # TODO: Return the percentage of cases resulting in deaths worldwide
     def getPercentDead():
         pass
 
-    # TODO: Return the percentage of cases resulting in full recoveries
+    # TODO: Return the percentage of cases resulting in full recoveries worldwide
     def getPercentRecovered():
         pass
 
-    # TODO: Return the percentage of people infected
+    # TODO: Return the percentage of people infected worldwide
     def getPercentInfected():
         pass
 
     # TODO: Return the country with the most active cases
     def getMostInfectedCountry():
+        pass
+
+    # TODO: Render a bar graph for the number of cases for each country
+    def renderCasesPerCountryGraph():
         pass
 
 
